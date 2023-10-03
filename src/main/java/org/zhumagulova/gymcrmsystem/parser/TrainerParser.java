@@ -1,6 +1,5 @@
-package org.zhumagulova.gymcrmsystem.mapper;
+package org.zhumagulova.gymcrmsystem.parser;
 
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 import org.zhumagulova.gymcrmsystem.model.Trainee;
 import org.zhumagulova.gymcrmsystem.model.Trainer;

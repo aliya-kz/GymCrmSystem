@@ -1,4 +1,4 @@
-package org.zhumagulova.gymcrmsystem.mapper;
+package org.zhumagulova.gymcrmsystem.parser;
 
 import org.springframework.stereotype.Component;
 import org.zhumagulova.gymcrmsystem.model.Trainee;
