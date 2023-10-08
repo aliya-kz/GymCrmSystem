@@ -12,7 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 @Data
 @Builder
-public class Trainee {
+public class Trainee implements TrainingEntity{
     private long id;
     private LocalDate dateOfBirth;
     private String address;

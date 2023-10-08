@@ -7,14 +7,13 @@ import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 @Data
 @Builder
 @Component
 @NoArgsConstructor
 @AllArgsConstructor
-public class Training {
+public class Training implements TrainingEntity {
     private long id;
     private Trainee trainee;
     private Trainer trainer;
