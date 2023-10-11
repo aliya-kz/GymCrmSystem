@@ -8,13 +8,13 @@ import org.zhumagulova.gymcrmsystem.model.Trainer;
 @Repository
 public class TrainerDao {
 
-
-    private Storage storage;
+    private final Storage storage;
 
     @Autowired
-    void setStorage(Storage storage) {
+    public TrainerDao(Storage storage) {
         this.storage = storage;
     }
+
 
     private final static String NAMESPACE = "Trainer_";
 

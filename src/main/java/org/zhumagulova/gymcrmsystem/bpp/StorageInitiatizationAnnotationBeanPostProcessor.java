@@ -4,7 +4,7 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
-import org.zhumagulova.gymcrmsystem.dao.Storage;
+import org.springframework.util.ReflectionUtils;
 import org.zhumagulova.gymcrmsystem.model.TrainingEntity;
 import org.zhumagulova.gymcrmsystem.parser.Parser;
 import org.zhumagulova.gymcrmsystem.parser.ParserFactory;
@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Map;
 
 @Component
-public class StorageInitiatizationBeanPostProcessor implements BeanPostProcessor {
+public class StorageInitiatizationAnnotationBeanPostProcessor implements BeanPostProcessor {
 
     @Value("${data.file.path}")
     private String dataFilePath;
@@ -30,34 +30,23 @@ public class StorageInitiatizationBeanPostProcessor implements BeanPostProcessor
     private final static String PARAMETERS_DELIMETER = ",";
     private final ParserFactory parserFactory;
 
-    private final static String STORAGE_MAP_PROPERTY = "storageMap";
-
-    public StorageInitiatizationBeanPostProcessor(ParserFactory parserFactory) {
+    public StorageInitiatizationAnnotationBeanPostProcessor(ParserFactory parserFactory) {
         this.parserFactory = parserFactory;
     }
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-        if (bean instanceof Storage) {
-            initializeStorage();
-            for (Field field : bean.getClass().getDeclaredFields()) {
+        for (Field field : bean.getClass().getDeclaredFields()) {
+            if (field.getAnnotation(InitializeStorage.class) != null) {
+                initializeStorageMap();
                 field.setAccessible(true);
-                String name = field.getName();
-                try {
-                    if (name.equals(STORAGE_MAP_PROPERTY)) {
-                        field.set(bean, storageMap);
-                    }
-                } catch (IllegalArgumentException e) {
-                    e.printStackTrace();
-                } catch (IllegalAccessException e) {
-                    throw new RuntimeException(e);
-                }
+                ReflectionUtils.setField(field, bean, storageMap);
             }
         }
         return bean;
     }
 
-    public void initializeStorage() {
+    public void initializeStorageMap() {
         Path path = Paths.get(dataFilePath);
         try {
             List<String> contents = Files.readAllLines(path);

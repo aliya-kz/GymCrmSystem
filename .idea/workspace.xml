@@ -5,44 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7476ace1-1f68-49b7-8fea-f5f22dda0bb9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/bpp/StorageInitiatizationBeanPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/model/TrainingEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/parser/Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/parser/ParserFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/bpp/InitializeStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/bpp/StorageInitiatizationBeanPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/bpp/StorageInitiatizationAnnotationBeanPostProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/dao/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/dao/Storage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/dao/TraineeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/dao/TraineeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/dao/TrainerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/dao/TrainerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/dao/TrainingDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/dao/TrainingDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/model/Trainee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/model/Trainee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/model/Trainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/model/Trainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/model/Training.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/model/Training.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/parser/TraineeParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/parser/TraineeParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/parser/TrainerParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/parser/TrainerParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/parser/TrainingParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/parser/TrainingParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/AppRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/AppRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/config/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/config/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/dao/Storage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/dao/Storage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/dao/TraineeDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/dao/TraineeDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/dao/TrainerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/dao/TrainerDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/dao/TrainingDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/dao/TrainingDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/model/Trainee$TraineeBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/model/Trainee$TraineeBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/model/Trainee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/model/Trainee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/model/Trainer$TrainerBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/model/Trainer$TrainerBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/model/Trainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/model/Trainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/model/Training$TrainingBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/model/Training$TrainingBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/model/Training.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/model/Training.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/model/TrainingType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/model/TrainingType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/parser/TraineeParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/parser/TraineeParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/parser/TrainerParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/parser/TrainerParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/parser/TrainingParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/parser/TrainingParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/service/TraineeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/service/TraineeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/service/TrainerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/service/TrainerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/service/TrainingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zhumagulova/gymcrmsystem/service/TrainingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-core-app-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-core-app-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/model/TrainingType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/model/TrainingType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,24 +53,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "D:/IdeaProjects/GymCrmSystem/src/main/java/org/zhumagulova/gymcrmsystem/config",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.43678162",
-    "settings.editor.selected.configurable": "Errors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/IdeaProjects/GymCrmSystem&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.43678162&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\GymCrmSystem\src\main\java\org\zhumagulova\gymcrmsystem\config" />
       <recent name="D:\IdeaProjects\GymCrmSystem" />
+      <recent name="D:\IdeaProjects\GymCrmSystem\src\main\java\org\zhumagulova\gymcrmsystem\config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\GymCrmSystem\src\main" />
@@ -168,21 +144,5 @@
       <updated>1695747558171</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/bpp/StorageInitiatizationBeanPostProcessor.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/zhumagulova/gymcrmsystem/bpp/StorageInitiatizationBeanPostProcessor.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

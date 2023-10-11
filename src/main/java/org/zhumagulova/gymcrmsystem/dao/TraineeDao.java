@@ -7,14 +7,12 @@ import org.zhumagulova.gymcrmsystem.model.Trainee;
 
 @Repository
 public class TraineeDao {
-
-    private Storage storage;
-
+    private final Storage storage;
+    private static final String NAMESPACE = "Trainee_";
     @Autowired
-    void setStorage(Storage storage) {
+    public TraineeDao(Storage storage) {
         this.storage = storage;
     }
-    private static final String NAMESPACE = "Trainee_";
 
     public void create(Trainee trainee) {
         storage.put(NAMESPACE + trainee.getId(), trainee);

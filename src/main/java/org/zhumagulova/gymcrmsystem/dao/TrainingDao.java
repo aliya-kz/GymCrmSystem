@@ -8,10 +8,10 @@ import org.zhumagulova.gymcrmsystem.model.Training;
 @Repository
 public class TrainingDao {
 
-    private Storage storage;
+    private final Storage storage;
 
     @Autowired
-    void setStorage(Storage storage) {
+    public TrainingDao(Storage storage) {
         this.storage = storage;
     }
 

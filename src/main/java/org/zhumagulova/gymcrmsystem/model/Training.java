@@ -1,16 +1,16 @@
 package org.zhumagulova.gymcrmsystem.model;
 
+import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 
 @Data
 @Builder
-@Component
+@Entity
 @NoArgsConstructor
 @AllArgsConstructor
 public class Training implements TrainingEntity {

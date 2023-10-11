@@ -1,5 +1,6 @@
 package org.zhumagulova.gymcrmsystem.model;
 
+import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,7 +12,8 @@ import java.util.List;
 @AllArgsConstructor
 @Data
 @Builder
-public class Trainer implements TrainingEntity{
+@Entity
+public class Trainer implements TrainingEntity {
     private long id;
     private String specialization;
     private List<Trainee> traineeList;
